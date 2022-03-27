@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Serif:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 70px;
+    filter: invert(100%);
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.navbar{
+    width: 100%;
+    margin-top: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 0px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+    padding: 5px 15px;
+    overflow: hidden;
+    margin-inline-end: 20px;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+.navbar ul li a:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px white,0 0 10px white;
+    color: rgb(198, 198, 231);
+}
+.landing-page {
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.landing-page img{
+    width: 100%;
+    position: absolute;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+}
+#background{
+    color: black;
+}
+#rocket {
+    position: absolute;
+    right: 5%;
+    bottom: -20%;
+}
+.home-tittle {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+.page2 {
+    background-color: rgb(43, 42, 42);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    z-index: 2;
+}
+.text-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top8{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #fff;
+    color: rgb(43, 42, 42);
+    display: block;
+    padding: .5rem;
+}
+#top8-2{
+    position: absolute;
+    background-color: rgb(43, 42, 42);
+    color: #fff;
+    clip-path: inset(-1% -1% 50% -1%);
+}
+#underTittle{
+    color: white;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-top: 1rem;
+    text-align: center;
+}
+.container{
+    position: relative;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#row1{
+    margin-bottom: 15px;
+}
+.row{
+    display: grid ;
+    grid-template-columns: repeat( 6, minmax(100px, 0.5fr));
+    gap: 10px;
+    gap: 1vw;
+    margin-left: 5%;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.gallery{
+    transition: transform 400ms;
+}
+.gallery:hover ~ .gallery{
+    transform: translateX(20px);
+}
+.tittle{
+    font-size: 45px;
+    font-size: 3.5vw;
+    
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8{
+    transition: 1s;
+    border-radius:50% ;
+}
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8{
+    opacity: 0;
+    display: none;
+}
+#i1:hover ~ #t1{
+    opacity: 1;
+    display: contents;
+}
+#i1:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3),0 0 15px rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+}
+#i2:hover ~ #t2{
+    opacity: 1;
+    display: contents;
+}
+#i2:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3),0 0 15px rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+}
+#i3:hover ~ #t3{
+    opacity: 1;
+    display: contents;
+}
+#i3:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3),0 0 15px rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+}
+#i4:hover ~ #t4{
+    opacity: 1;
+    display: contents;
+}
+#i4:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3),0 0 15px rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+}
+#i5:hover ~ #t5{
+    opacity: 1;
+    display: contents;
+}
+#i5:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),0 0 15px rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+}
+#i6:hover ~ #t6{
+    opacity: 1;
+    display: contents;
+}
+#i6:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3),0 0 15px rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+}
+#i7:hover ~ #t7{
+    opacity: 1;
+    display: contents;
+}
+#i7:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),0 0 15px rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+}
+#i8:hover ~ #t8{
+    opacity: 1;
+    display: contents;
+}
+#i8:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),0 0 15px rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+}
